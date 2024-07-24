@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美しいカードUI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #e6f2ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #b3d9ff;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.15);
+        }
+        .card-header {
+            background-color: #e6f2ff;
+            padding: 10px;
+            text-align: center;
+        }
+        .card-title {
+            margin: 0;
+            font-size: 18px;
+            color: #005cb8;
+            font-weight: 700;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-content {
+            font-size: 15px;
+            color: #004080;
+            line-height: 1.4;
+        }
+        .card-footer {
+            background-color: #e6f2ff;
+            padding: 10px;
+            text-align: center;
+        }
+        .card-button {
+            background-color: #4da6ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .card-button:hover {
+            background-color: #FF8C00;
+        }
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
+            .card-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header" style="background-color: orange;">
+                <h2 class="card-title">美しいデザイン</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">これは美しいカードUIの例です。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">情報整理</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">情報を整理して表示します。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">レスポンシブ</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">レスポンシブデザイン対応。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-color: #90EE90;">
+                <h2 class="card-title">使いやすさ</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">使いやすいUIデザイン。直感的な操作と明確な表示で、ユーザーの負担を軽減します。アクセシビリティにも配慮し、様々なユーザーに対応可能です。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+         <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">シンプル表示</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">シンプルで効果的な表示。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">カスタマイズ</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">カスタマイズ可能なデザイン。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">多用途</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">様々な用途に適応可能。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">効率的情報提示</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-content">効率的な情報提示方法。</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-button">詳細</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // カードのボタンクリック時の処理
+        document.querySelectorAll('.card-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('ボタンがクリックされました！');
+            });
+        });
+    </script>
+</body>
+</html>

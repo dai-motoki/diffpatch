@@ -7,10 +7,11 @@
 
 diffpatchは、ファイルの内容を指定された要求に基づいて変更するAI機能です。Anthropic APIを使用して変更内容を生成し、unified diffフォーマットでパッチを適用します。
 
+![2024_07_24_08_26_diffpのコピー](https://github.com/user-attachments/assets/c33c9279-4c2e-4d06-b2c3-8825a93682e0)
 
-詳細はこちら
 
-https://x.com/ai_syacho/status/1816076680810881309
+
+詳細はこちら → https://x.com/ai_syacho/status/1816076680810881309
 
 
 ## 機能
